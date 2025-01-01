@@ -18,3 +18,9 @@ li {
 .list-section{
     display: none;
 }
+
+#audio{
+    border: 1px solid salmon;
+    border-radius: 40%;
+    padding: 10px;
+}
