@@ -5,60 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semantic HTML Example</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="web.css">
 </head>
 
 <body>
     <header>
-        <h1>My Website</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="web.html">Web</a></li>
                 <li><a href="#products">Products</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <img src="/Images/quote.jpg" alt="This is a quote image" title="This is a quote image" loading="lazy" width="200"
-            height="200">
-    </section>
-
-    <div>
-        <li>
-            <a href="#section-1" target="_blank">Go to the section 1</a>
-        </li>
-        <li><a href="#section-2">Go to the section 2</a></li>
-        <div style="margin: 10px 20px; line-height: 25px;">
-            <a href="mailto:atikur.r.8540@gmail.com">Send Email</a>
-        <br>
-        <a href="file.pdf" download>Download pdf</a>
-        <br> 
-        <a href="index.html">Previous practice</a>
-        </div>   
-    </div>
-
-
     <main>
-        <section>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Contact</li>
-            </ul>
-            <dl>
-                <dt>HTML</dt>
-                <dd>Hypertext Markup Language</dd>
-                <dt>CSS</dt>
-                <dd>Cascading Style Sheets</dd>
-                <dt>JavaScript</dt>
-                <dd>A programming language for the web</dd>
-            </dl>
+
+        <section id="table-section">
+            <table>
+                <caption style="text-decoration: underline; margin-bottom: 10px;">Employee Status</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td colspan="2">xyz@gmail.com</td>
+                        <!-- <td>123-456-7890</td> -->
+                    </tr>
+                    <tr>
+                        <td rowspan="2">John Smith</td>
+                        <td>mno@gmail.com</td>
+                        <td>098-765-4321</td>
+                    </tr>
+                    <tr>
+                        <!-- <td>Alex Smith</td> -->
+                        <td>stu@gmail.com</td>
+                        <td>456-789-0123</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="text-align: left;">Total:</td>
+                        <!-- <td>Price</td> -->
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
         </section>
+
+        <section id="form-section">
+            <h2>Contact Form</h2>
+            <form action="submit_form.php" method="post" enctype="multipart/form-data">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <label for="pitha">Pick One</label><br>
+                <input type="radio" name="pitha" id=""> Chicken Pitha
+                <input type="radio" name="pitha" id=""> Beef Pitha
+                <input type="radio" name="pitha" id=""> Fish Pitha <br>
+
+                <label for="vorta">Pick one Vorta</label> <br>
+                <input type="checkbox" name="vorta" id="aloo"> Aloo Vorta
+                <input type="checkbox" name="vorta" id="aloo"> Morich Vorta
+                <input type="checkbox" name="vorta" id="aloo"> Begun Vorta
+        </section>
+
+        <section id="image-section">
+            <div class="background"></div>
+        </section>
+
         <section id="about">
             <h2>About</h2>
             <article>
@@ -69,12 +95,6 @@
                     technologies.</p>
             </article>
         </section>
-
-        <h4 id="section-1">This is section 1 text</h4>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate possimus suscipit, rem esse itaque
-            officiis vitae quasi omnis corporis modi delectus nihil! Deleniti officiis error aspernatur? Debitis,
-            repellat voluptatem maxime dolores ab molestiae accusantium aperiam ipsa culpa asperiores! Qui rem, quod
-            vitae blanditiis recusandae totam sapiente eius aliquam eaque nihil.</p>
 
 
         <section id="services">
@@ -116,14 +136,30 @@
 
 
 
-        <h4 id="section-2">This is section 2 text</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fuga qui debitis aperiam fugiat veritatis ea
-            aliquid non nobis ut odit quis, eligendi consequatur porro! Facere maxime officia earum dolore perspiciatis
-            in, aut expedita sint ipsa facilis, ut eveniet odio? Reprehenderit culpa nostrum cum! Atque dolore, eligendi
-            molestias iste ea quidem, dolor adipisci id a exercitationem earum quae veniam eius voluptates commodi.
-            Aspernatur quasi quia magnam rem ipsam ipsa voluptatum non dolorum deserunt debitis fugit eveniet aliquid
-            repellat incidunt saepe dignissimos cupiditate, recusandae modi esse officiis veritatis. Quo, natus. Earum,
-            qui odio! Dolor, dolore architecto! Nihil nobis dicta aut aliquam?</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </main>
 
